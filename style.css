@@ -14,7 +14,7 @@ li {
 }
 
 section {
-    background-color: rgb(191, 191, 191);
+    background-color: rgb(210, 210, 210);
 }
 /* LANDING PAGE */
 
@@ -43,6 +43,16 @@ a {
     text-decoration: none;
 }
 
+.container {
+    padding 50px 0; 
+}
+
+.row {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
 .click {
     transition: all 500ms ease;
 }
@@ -177,4 +187,13 @@ nav {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+}
+
+
+/* PROJECTS SECTION */
+
+.section__title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 16px;
 }
