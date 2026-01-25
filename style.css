@@ -53,7 +53,68 @@ a {
 .click:active {
     transform: scale(0.8);
 }
- 
+
+.mail__button {
+    position: absolute;
+    bottom: 32px;
+    right: 30px;
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 35px;
+    border: 2px solid #242424;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.scroll__icon {
+    width: 6px;
+    height: 6px;
+    background-color: #242424;
+    border-radius: 50%;
+}
+
+.scroll__icon:after {
+    background-color: #242424;
+    content: "";
+    width: 6px;
+    height: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    animation: scroll 1s infinite alternate-reverse;
+}   
+
+@keyframes scroll {
+    0% {
+        transform: translateY(3px);
+    }
+
+    100% {
+        transform: translateY(-3px);
+    }
+}
 /* NAVIGATION */
 
 nav {
