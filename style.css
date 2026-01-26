@@ -45,6 +45,7 @@ a {
 
 .container {
     padding: 50px 0; 
+    width: 100%;
 }
 
 .row {
@@ -267,3 +268,39 @@ nav {
     line-height: 2;
 }
 
+/* FOOTER SECTION */
+
+footer {
+    background-color: #242424;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#footer__logo {
+    width: 150px;
+    height: auto;
+    filter: invert(1);
+}
+
+.footer__social--link {
+    color: white;
+}
+
+.footer__copyright {
+    margin-top: 22px;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__social--list {
+    width: 100%;
+    display: flex;  
+    justify-content: space-around;
+    max-width: 700px;
+    margin: 28px 0;
+}
