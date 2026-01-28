@@ -16,6 +16,24 @@ li {
 section {
     background-color: rgb(210, 210, 210);
 }
+
+input, textarea {
+    width: 100%;
+    background-color: #242424;
+    color: white;
+    outline: none;
+    border: 1px solid #c0c4cc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 40px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block; 
+}
 /* LANDING PAGE */
 
 #landing-page {
@@ -270,6 +288,9 @@ nav {
     background-color: #242424;
     color: white;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 72px;
 }
 
 .modal__title {
