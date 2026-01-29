@@ -22,17 +22,31 @@ input, textarea {
     background-color: #242424;
     color: white;
     outline: none;
-    border: 1px solid #c0c4cc;
+    border: 3px solid #c0c4cc;
     border-top: none;
     border-left: none;
     border-right: none;
     height: 40px;
+    transition: all 450ms ease;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+    margin-top: 8px;
 }
 
 label {
     font-size: 16px;
-    margin-bottom: 8px;
-    display: block; 
+    margin-bottom: 8px; 
+}
+
+input:hover, textarea:hover {
+    border-color: #dcdfe6;
+}
+
+input:focus, textarea:focus {
+    border-color: #872af8;
 }
 /* LANDING PAGE */
 
@@ -299,13 +313,41 @@ nav {
 
 .modal__subtitle {
     margin: 12px 0 24px 0;
-
+    font-size: 18px;
 }
 
 .modal__para {
     line-height: 1.75;
     margin-bottom: 24px;
 }
+
+.form__item {
+    margin-bottom: 20px;
+}
+
+.form__submit {
+    background-color: #872af8;
+    color: white;
+    border: 2px solid #872af8;
+    padding: 14px;
+    max-width: 200px;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 7px;
+}
+
+.form__submit:hover {
+    border-color: white;
+    background-color: transparent;
+    transition: ease 450ms all;
+}
+
+.form__submit:active {
+    border-color: #872af8;
+    color: #872af8;
+}
+
+
 /* PROJECTS SECTION */
 
 .section__title {
