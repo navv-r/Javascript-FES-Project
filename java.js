@@ -16,6 +16,13 @@ function contact() {
           ).then(() => {
                loading.classList.remove("modal__overlay--visible")
                success.classList += " modal__overlay--visible"
+
+               setTimeout(() => {
+               success.classList.remove("modal__overlay--visible")
+               event.target.reset()
+               toggleModal()
+               }, 1000)
+               
           }).catch(() =>{
                loading.classList.remove("modal__overlay--visible")
                alert(
