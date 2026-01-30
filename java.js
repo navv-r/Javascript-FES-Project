@@ -2,7 +2,7 @@
 // service_g1pstsc
 // VwH5xvKzzdxR_BhUd
 
-function contact() {
+function contact(event) {
      event.preventDefault()
      const loading = document.querySelector('.modal__overlay--loading')
      const success = document.querySelector('.modal__overlay--success')
