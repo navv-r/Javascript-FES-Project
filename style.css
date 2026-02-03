@@ -279,7 +279,7 @@ nav {
     visibility: visible;
 }
 
-.modal--open .modal__about .modal__contact{
+.modal--open .modal__about {
     transform: translateX(0%);
 }
 
@@ -293,7 +293,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: all 300ms ease-in;
+    transition: all 500ms ease-in;
 }
 
 .modal__about {
@@ -303,7 +303,7 @@ nav {
     flex-direction: column;
     padding: 40px 72px;   
     justify-content: center;
-    transform: translateX(-110%);
+    transform: translateX(0%)
 }
 
 .modal__languages {
