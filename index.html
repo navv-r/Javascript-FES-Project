@@ -77,7 +77,7 @@
             </div>
         </div>
     </header>
-    <button class="mail__button click">
+    <button class="mail__button click" onclick="toggleModal()">
         <i class="fa-solid fa-envelope"></i>
     </button>
     <a href="#projects" class="scroll">
@@ -104,11 +104,12 @@
                     <i class="fa-brands fa-square-js modal__img"></i>
                 </figure>
                 <figure class="modal__language">
-                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-react modal__img"></i>
                 </figure>
             </div>   
         </div>
         <div class="modal__half modal__contact">
+            <i class="fas fa-times modal__exit click" ></i>
             <h3 class="modal__title modal__title--contact">Let's have a chat</h3>
             <h4 class="modal__subtitle modal__subtitle--contact">Currently Open to New Opportunities </h4>
             <form id="contact__form" onsubmit="contact(event)">
@@ -133,7 +134,7 @@
                 Thanks for the message! Looking forward to speaking to you soon!
             </div>
         </div>
-        <i class="fas fa-times modal__exit click" ></i>
+        
     </div>   
 </section>
 <section id="projects"> 
