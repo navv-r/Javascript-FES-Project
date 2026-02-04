@@ -13,6 +13,7 @@ li {
 
 section {
     background-color: rgb(210, 210, 210);
+    transition: all 700ms ease;
 }
 
 input, textarea {
@@ -47,7 +48,35 @@ input:focus, textarea:focus {
     border-color: #872af8;
 }
 
+.dark-theme .title,
+.dark-theme .section__title,
+.dark-theme .section__subtitle,
+.dark-theme .nav__link--anchor,
+.dark-theme .fa-adjust,
+.dark-theme .header__para {
+    color: white;
+}
 
+.dark-theme section {
+    background-color: #242424;
+}
+
+.dark-theme .personal__logo {
+    filter: invert(1);
+}
+
+.dark-theme .scroll__icon{
+    border-color: white;
+}
+
+.dark-theme .scroll__icon:after,
+.dark-theme .link__hover-effect--black:after {
+    background-color: white;
+}
+
+.dark-theme .link__hover-effect--white:after {
+    background-color: #242424;
+}
 
 /* LANDING PAGE */
 
@@ -196,7 +225,7 @@ nav {
     gap: 20px;
 }
 
-#personal__logo {
+.personal__logo {
     width: 100px;
     height: auto;
 }
@@ -279,7 +308,8 @@ nav {
     visibility: visible;
 }
 
-.modal--open .modal__about {
+.modal--open .modal__about,
+.modal--open .modal__contact {
     transform: translateX(0%);
 }
 
@@ -303,7 +333,8 @@ nav {
     flex-direction: column;
     padding: 40px 72px;   
     justify-content: center;
-    transform: translateX(0%)
+    transform: translateX(-110%);
+    transition: all 700ms ease;
 }
 
 .modal__languages {
@@ -320,7 +351,6 @@ nav {
     padding-top: 18px;
 }
 
-
 .modal__contact {
     background-color: #242424;
     color: white;
@@ -329,6 +359,7 @@ nav {
     justify-content: center;
     padding: 40px 72px;
     transform: translateX(110%);
+    transition: all 700ms ease;
 }
 
 .modal__title {

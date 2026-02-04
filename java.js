@@ -2,6 +2,18 @@
 // service_g1pstsc
 // VwH5xvKzzdxR_BhUd
 
+let contrastToggle = false;
+function toggleContrast() {
+	contrastToggle = !contrastToggle
+	if (contrastToggle) {
+		document.body.classList += " dark-theme"
+	}
+	else {
+		document.body.classList.remove("dark-theme")
+	}
+	
+}
+
 function contact(event) {
      event.preventDefault()
      const loading = document.querySelector('.modal__overlay--loading')
@@ -39,5 +51,5 @@ function contact(event) {
           }
           isModalOpen = true
           console.log("toggleModal()")
-          document.body.classList += " modal--open"
+          document.body.classList.add("modal--open")
      }
